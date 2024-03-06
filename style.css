@@ -1,8 +1,13 @@
 body {
     display: flex;
     flex-direction: column;
-    gap: 24px;
-    
+    gap: 50px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
 }
 
 .header {
@@ -10,8 +15,6 @@ body {
     display: flex;
     flex-direction: column;
     gap: 100px;
-    padding-left: 150px;
-    padding-right: 150px;
     padding-top: 8px;
     padding-bottom: 75px;
 }
@@ -31,8 +34,8 @@ body {
 .links {
     display: flex;
     gap: 24px;
-    color: #e5e7eb;
     font-size: 18px;
+    text-decoration: none;
 }
 
 .intro {
@@ -43,7 +46,7 @@ body {
 .heading {
     display: flex;
     flex-direction: row;
-    justify-content: baseline;
+    justify-content: center;
     gap: 75px;
 }
 
@@ -91,6 +94,7 @@ body {
     justify-content: space-between;
     align-items: baseline;
     gap: 48px;
+    flex-wrap: wrap;
 }
 
 .cardimg {
@@ -123,7 +127,6 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    flex-wrap: wrap;
     gap: 8px;
     padding: 16px;
 }
@@ -143,6 +146,7 @@ body {
     align-self: flex-end;
     font-weight: bold;
     font-size: 24px;
+    margin-right: -120px;
 }
 
 .bottom {
@@ -156,7 +160,7 @@ body {
     justify-content: space-between;
     align-items: center;
     background-color: #3882f6;
-    width: 800px;
+    width: 1000px;
     color: #f9faf8;
     padding: 16px;
     border-radius: 12px;
@@ -171,4 +175,41 @@ body {
     color: #f9faf8;
     border-radius: 8px;
     border:2px solid #e5e7eb;
+}
+
+.text1 {
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.text2 {
+    font-size: 24px;
+    font-weight: lighter;
+}
+
+footer {
+    background-color: #1f2937;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #f9faf8;
+    padding: 16px;
+}
+
+body .container {
+    flex: auto;
+}
+
+.header, .upper, .middle, .bottom, footer {
+    padding-left: 150px;
+    padding-right: 150px;
+}
+
+a {
+    color: #e5e7eb;
+    text-decoration: none
+}
+
+.mid {
+    width: 800px;
 }
